@@ -1,5 +1,3 @@
-
-
 // Här sparas alla användarnamn och lösenord som funkar att logga in med på sidan
 const allUsers = [
     {
@@ -16,8 +14,6 @@ const allUsers = [
     }
 ];
 
-const storageInput = document.querySelector(".storage");
-const storedInput = localStorage.getItem("textInput");
 const button = document.querySelector(".button");
 const logOutButton = document.querySelector(".buttonLogOut");
 const text = document.querySelector(".text");
@@ -68,12 +64,12 @@ function checkLogIn() {
     }
 }
 
-// Hur man sparar till localStorage
+// Sparar till localStorage
 const saveToLocalStorage = (userName) => {
     localStorage.setItem("textInput", userName)
 }
 
-// Här kallar jag på en funktion i en funktion så att allt inte blir copy paste överallt
+// Här kallar jag på en funktion i en funktion så att allt inte blir copy paste i koden
 function logOut(){
     setBodyDataLogOut();
 }
