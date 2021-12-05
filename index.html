@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memelord</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="container">
+        <div id="logInForm">
+            <input class="storage" id="userName" type="text" placeholder="Användarnamn">
+            <br>
+            <input class="storage" id="password" type="text" placeholder="Lösenord">
+            <button class="button" onclick="whoAreYou()">Logga in</button>
+        </div>
+        <div id="logOutForm"><button class="buttonLogOut">Logga ut</button>
+        </div>
+    </section>
+
+    <section class="container-2" id="notLoggedIn">
+        <h1>Du måste logga in för att få tillgång till alla memes</h1>
+        <h2>Det kan du göra här ovanför i menyn :)</h2>
+    </section>
+
+    <section class="container-2" id="loggedIn">
+        <h1>Välkommen till Memelord </h1>
+        <p id="whoIsLoggedIn"></p>
+        <h2>Nu har du tillgång till alla memes som finns här på hemsidan</h2>
+    </section>
+
+    <section class="container-2" id="error">
+        <h1>Fel inloggningsuppgifter!</h1>
+        <h2>Var vänlig försök igen</h2>
+    </section>
+
+    <footer class="footer">
+        <p class="footerText">Kontakta oss här: </p>
+    </footer>
+
+</body>
+</html>
